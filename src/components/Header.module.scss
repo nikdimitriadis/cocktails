@@ -1,0 +1,66 @@
+.header{
+    background: #262B46;
+    color: white;
+    padding: 2rem 5rem;
+    word-spacing: 0.7rem;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .navText{
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            // word-spacing: 0.7rem;
+        }
+    }
+
+
+    article{
+
+        h1{
+            font-size: 3.5rem;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            // word-spacing: 0.7rem;
+        }
+
+        form{
+            margin: 3rem 0;
+            
+            .radius{
+                border-radius: 6px;
+                outline: none;
+            }
+
+            button{
+                background-color:#6FC3DF;
+                color: #262B46;
+                padding: 0.5rem 2rem;
+                border-color: #262B46;
+                margin-left: 2rem;
+                font-size: 1.5rem;
+                &:hover{
+                    background-color:#0ca2d4; 
+                    color: white;
+                    cursor: pointer;
+                }
+
+                &:active{
+                    background-color:#0ca2d48c; 
+                
+                }
+            }
+
+            input{
+                padding: 0.5rem 2rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

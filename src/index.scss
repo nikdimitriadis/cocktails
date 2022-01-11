@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //   sans-serif;
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.errorDiv{
+  height: 100vh;
+  display: flex;
+  place-items: center;
+
+  .errorP{
+    font-size: 3.5rem;
+    color: rgb(252, 110, 110);
+  }
+}

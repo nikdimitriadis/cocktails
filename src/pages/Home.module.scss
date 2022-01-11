@@ -1,0 +1,57 @@
+.flexen{
+  display: flex;
+  flex-wrap: wrap;
+
+  a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    width: 50%;
+    padding: 5rem 0;
+    &:hover{
+      opacity: 0.9;
+    }
+
+    .div{
+      margin-left: 2.5rem;
+      h2{
+        font-size: 4rem;
+        margin-bottom: 0;
+      }
+
+      p{
+        font-size: 2rem;
+        width: 70%;
+    
+      }
+    }
+}
+
+.style1 {
+  background: #87c5a4;
+}
+.style2 {
+  background: #6fc3df;
+}
+.style3 {
+  background: #ec8d81;
+}
+.style4 {
+  background: #8d82c4;
+}
+.style5 {
+  background: #e7b788;
+
+}
+.style6 {
+  background: #8ea9e8;
+}
+}
+
+@media screen and (max-width: 650px){
+  .flexen{
+    a{
+      width: 100%;
+    }
+  }
+}
