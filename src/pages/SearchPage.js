@@ -5,8 +5,8 @@ import LoadingSpinner from "../components/Spinner/LoadingSpinner";
 import styles from "./SearchPage.module.scss";
 
 const SearchPage = () => {
-  const [sit, setSit] = useState(false);
-  const [newData, setNewData] = useState([]);
+  // const [sit, setSit] = useState(false);
+  // const [newData, setNewData] = useState([]);
   const params = useParams();
   const navigate = useNavigate();
 
@@ -54,11 +54,13 @@ const SearchPage = () => {
   }
 
   function filterHandler(searchValue) {
-    const [indexios, datatios] = searchValue;
+    // const [indexios, datatios] = searchValue;
+    // console.log(indexios, datatios);
+    // console.log(searchValue);
 
-    navigate(`/search/${datatios.strDrink}/soloed`);
+    navigate(`/search/${searchValue[1].strDrink}/soloed`);
   }
 
-  return <>{!sit && content}</>;
+  return <>{content}</>;
 };
 export default SearchPage;

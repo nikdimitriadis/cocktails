@@ -28,7 +28,7 @@ const useObjFilter = (data) => {
     });
 
     setNewIngredients(newIngr);
-  }, [data]);
+  }, []);
 
   return {
     newIngredients,
