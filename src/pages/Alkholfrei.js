@@ -1,10 +1,10 @@
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import LoadingSpinner from "../components/Spinner/LoadingSpinner";
 import ShowList from "../components/Lists/ShowList";
 
 const Alkoholfrei = () => {
-  const params = useParams();
+  // const params = useParams();
   const { data, isLoading, error } = useFetch(
     `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic`
   );
