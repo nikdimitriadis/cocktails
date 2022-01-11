@@ -5,7 +5,7 @@ const useObjFilter = (data) => {
   const ingredients = [];
   const measures = [];
 
-  useEffect(() => {
+  const test = (data) => {
     for (let key in data) {
       if (data[key] != null) {
         if (key.startsWith("strIngredient")) {
@@ -28,6 +28,10 @@ const useObjFilter = (data) => {
     });
 
     setNewIngredients(newIngr);
+  };
+
+  useEffect(() => {
+    test(data);
   }, []);
 
   return {
