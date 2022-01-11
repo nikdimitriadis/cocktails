@@ -28,7 +28,7 @@ const useObjFilter = (data) => {
     });
 
     setNewIngredients(newIngr);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     test(data);
