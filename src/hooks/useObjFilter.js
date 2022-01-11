@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const useObjFilter = (data) => {
   const [newIngredients, setNewIngredients] = useState([]);
   const ingredients = [];
   const measures = [];
 
-  const test = (data) => {
+  const test = useCallback((data) => {
     for (let key in data) {
       if (data[key] != null) {
         if (key.startsWith("strIngredient")) {
@@ -28,11 +28,11 @@ const useObjFilter = (data) => {
     });
 
     setNewIngredients(newIngr);
-  };
+  }, []);
 
   useEffect(() => {
     test(data);
-  }, []);
+  }, [test, data]);
 
   return {
     newIngredients,
